@@ -204,7 +204,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
 </head>
 <body>
 
-<div class="proto">⚠ PROTOTYPE — Not the live page. <span>Gray buttons = link not yet added · Dashed border = resource in development · Yellow = update needed before publishing</span></div>
+<div class="proto">⚠ PROTOTYPE — Not the live page.</div>
 
 <header class="ex-header">
   <div class="ex-brand"><div class="g">g</div>Goodwill Exchange</div>
@@ -239,6 +239,17 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
 
 <div class="wrap">
 
+<!-- GETTING STARTED BOX1 -->
+  <div class="start-box" style="margin-top:36px;">
+    <div class="sb-text">
+      <h3>New to OA?</h3>
+                </div>
+    <div class="sb-cta">
+      <button class="cta-btn cta-primary" onclick="document.getElementById('intro').scrollIntoView({behavior:'smooth'})">Start with Intro Resources</button>
+    </div>
+  </div>
+
+
   <!-- GETTING STARTED BOX -->
   <div class="start-box" style="margin-top:36px;">
     <div class="sb-text">
@@ -257,15 +268,6 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
     </div>
   </div>
 
-<!-- GETTING STARTED BOX -->
-  <div class="start-box" style="margin-top:36px;">
-    <div class="sb-text">
-      <h3>New to OA?</h3>
-                </div>
-    <div class="sb-cta">
-      <button class="cta-btn cta-primary" onclick="document.getElementById('intro').scrollIntoView({behavior:'smooth'})">Start with Intro Resources</button>
-    </div>
-  </div>
 
 
   <!-- OBJECTIVES -->
@@ -316,6 +318,16 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
     </div>
   </div>
 
+ <!-- OA Tools Title -->
+<div id="intro" style="margin-top:52px;">
+    <div class="sec-head" style="margin-top:0;">
+      <div class="sec-label">Ready to start implementing?</div>
+      <h2>OA Tools</h2>
+    </div>
+    <p class="sec-desc">The Goodwill Opportunity Accelerator® system of tools and resources provide a cohesive, scalable backbone for Goodwill’s mission delivery; aligning people, technology, and partnerships around a shared framework that advances equity, workforce relevance, and economic mobility.</p>
+      </div>
+
+
   <!-- PHASE NAV -->
   <div class="phase-nav">
     <div class="phase-nav-inner">
@@ -330,8 +342,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
   <!-- TIER BAR (shown once, controls all panels) -->
   <div class="tier-bar" style="margin-top:16px;" id="tierbar">
     <span class="lbl">Show resources for:</span>
-    <div class="tier-btn ess on" onclick="setTier('ess')">🔵 OA Essentials</div>
-    <div class="tier-btn hf" onclick="setTier('hf')">🟣 OA High Fidelity</div>
+    <div class="tier-btn ess on" onclick="setTier('ess')">🔵 OA Gold</div>
+    <div class="tier-btn hf" onclick="setTier('hf')">🟣 OA Platinum</div>
     <div class="tier-btn" style="background:var(--bg);color:var(--muted);border-color:var(--border);" onclick="setTier('all')">All</div>
     <span class="tier-info" id="tier-hint">Showing core adoption requirements</span>
   </div>
@@ -340,84 +352,87 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
   <div class="panel on" id="panel-org">
     <div class="phase-banner pb-org">
       <div class="pb-icon">🏗</div>
-      <div><div class="pb-head">Organizational Preparation</div><p class="pb-desc">Build your foundation before delivering OA services. Trained staff, aligned systems, and strong community and employer partnerships are what make everything else work. Use these tools to get your organization ready.</p></div>
+      <div><div class="pb-head">Organizational Preparation</div><p class="pb-desc">The tools, resources and training in the Organizational Preparation step of the Goodwill Opportunity Accelerator® supports mission teams as you train your staff, align on systems and processes, gain internal stakeholder buy-in, and build community and employer partnerships. </p></div>
     </div>
     <div class="cards">
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Org Prep · 1</div></div>
         <h3>Functionally Aligned Staffing Model</h3>
-        <p class="desc">Organize your team into distinct functional roles: Career Navigators, Trainers, Business Engagement Staff, Mission Leaders, and Data Specialists — each owning a specific area of OA service delivery. This structure improves participant outcomes and scales your capacity.</p>
+        <p class="desc">The organization must demonstrate through its staffing model that core functions are aligned with OA best practices — staff are organized into distinct functional groups, each covering a specific area of OA service delivery. </p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Core functions covered</span>
-          <span class="tier-pill tp-hf">High Fidelity: All 5 roles required</span>
+          <span class="tier-pill tp-ess">Gold: Core functions covered</span>
+          <span class="tier-pill tp-hf">Platinum: All 5 roles required</span>
         </div>
         <div class="card-footer">
-          <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — Staffing Case Study</a>
+<a href="https://exchange.goodwill.org/documents/d/goodwill/mission-playbook_chapter-2_staffing-your-mission-strategy" class="btn btn-live" target="_blank">Mission Playbook Chapter 2 - Staffing Your Mission Strategy →</a>
+<a href="https://exchange.goodwill.org/documents/d/goodwill/mission-advancement_playbook-case-study-1_staffing-structures" class="btn btn-live" target="_blank">Staffing Structures Case Study →</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Org Prep · 2</div></div>
         <h3>Goodwill Career Coach & Navigator Certificate</h3>
-        <p class="desc">Free professional certificate on Coursera created from Goodwill's 120 years of workforce expertise. Covers intensive, collaborative coaching methods to help clients identify and address employment barriers. Required for all navigators at High Fidelity.</p>
+        <p class="desc">Goodwill® Career Navigator and Coach Professional Certificate for team members providing coaching and career navigation services, which includes intensive, collaborative support to help clients identify and address employment barriers.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: 50% certified in Year 1</span>
-          <span class="tier-pill tp-hf">High Fidelity: 100% certified in Year 1</span>
+          <span class="tier-pill tp-ess">Gold: 50% certified in Year 1</span>
+          <span class="tier-pill tp-hf">Platinum: 100% certified in Year 1</span>
         </div>
         <div class="card-footer">
      
-          <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — Smartsheet Request Form</a>
+<a href="https://app.smartsheet.com/b/form/8720b80b9ba846d0872aa6d4d3464a81" class="btn btn-live" target="_blank">Professional Certificate License Request →</a>
+<a class="btn btn-dev">🔧 In development- Professional Certificate Flyer</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Org Prep · 3</div></div>
         <h3>OA Fellows Program</h3>
-        <p class="desc">Leadership development that creates internal OA ambassadors. Fellows are trained to understand the framework, equip peers across your organization, and drive adoption from the inside. Organizations with Fellows consistently move through adoption faster.</p>
+        <p class="desc">Leadership development through participation in the OA Fellows program. OA Fellows are ambassadors for the OA initiative, trained to understand the framework and equip Goodwill peers to deploy it locally.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: At least 1 Fellow</span>
-          <span class="tier-pill tp-hf">High Fidelity: At least 2 Fellows</span>
+          <span class="tier-pill tp-ess">Gold: At least 1 Fellow</span>
+          <span class="tier-pill tp-hf">Platinum: At least 2 Fellows</span>
         </div>
         <div class="card-footer">
          
-          <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — Fellows Application</a>
+          <a href="https://app.smartsheet.com/b/form/7bce36a2445f4de4986d99aa9ab402a9" class="btn btn-live" target="_blank">OA Fellows Application →</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Org Prep · 4</div></div>
         <h3>Referral & Wraparound Network Integration</h3>
-        <p class="desc">Build community partnerships and use technology to connect participants to support services. At High Fidelity, this means Automated Referral Technology (ART) platforms like Unite Us, WellSky, or FindHelp — enabling electronic warm hand-offs and closed-loop tracking.</p>
+        <p class="desc">Building partnerships and using referral technology to connect individuals to support services.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Referral process + partnerships</span>
-          <span class="tier-pill tp-hf">High Fidelity: ART platform required</span>
+          <span class="tier-pill tp-ess">Gold: Referral process + partnerships</span>
+          <span class="tier-pill tp-hf">Platinum: ART platform required</span>
         </div>
         <div class="card-footer">
 
-          <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — ART Tools on Exchange</a>
+        
+<a class="btn btn-dev">🔧 In development- ART Tools on Exchange</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Org Prep · 5</div></div>
         <h3>Employer Partnership Planning & Outreach</h3>
-        <p class="desc">Engage employers strategically to create job placement opportunities and co-created training programs. At High Fidelity, use labor market data (Chmura, DOL) to target occupations paying living wages and build true co-creation partnerships with dedicated Business Engagement Staff.</p>
+        <p class="desc">Engaging employers using labor market data to co-create training and job placement strategies.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Local employer referral partnerships</span>
-          <span class="tier-pill tp-hf">High Fidelity: LMI-informed, co-created training</span>
+          <span class="tier-pill tp-ess">Gold: Local employer referral partnerships</span>
+          <span class="tier-pill tp-hf">Platinum: LMI-informed, co-created training</span>
         </div>
         <div class="card-footer">
        
-          <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — CaseWorthy on Exchange</a>
+<a class="btn btn-dev">🔧 In development- Employer Engagement Toolkit</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Org Prep · 6</div></div>
         <h3>Evaluating Impact & Metrics</h3>
-        <p class="desc">Collect and analyze data to measure KPIs and participant feedback throughout the journey. Monthly data submission to GII is required at both levels. At High Fidelity, use CaseWorthy or equivalent with an extended data set and 365-day post-placement follow-up.</p>
+        <p class="desc">Collecting and analyzing data to measure KPIs and participant feedback throughout the journey.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Short KPI list, 180-day follow-up</span>
-          <span class="tier-pill tp-hf">High Fidelity: Full KPI list, 365-day follow-up</span>
+          <span class="tier-pill tp-ess">Gold: Short KPI list, 180-day follow-up</span>
+          <span class="tier-pill tp-hf">Platinum: Full KPI list, 365-day follow-up</span>
         </div>
         <div class="card-footer">
 
-          <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — CaseWorthy on Exchange</a>
+<a class="btn btn-dev">🔧 In development- CaseWorthy on Exchange</a>
         </div>
       </div>
     </div>
@@ -427,47 +442,47 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
   <div class="panel" id="panel-p1">
     <div class="phase-banner pb-1">
       <div class="pb-icon">🎯</div>
-      <div><div class="pb-head">Phase 1 — Assess & Plan</div><p class="pb-desc">Recruit job seekers, conduct intake, run assessments, and build personalized career and financial plans. The goal here is understanding each participant deeply enough to create a plan that actually works for them.</p></div>
+      <div><div class="pb-head">Phase 1 — Assess & Plan</div><p class="pb-desc">The tools, resources and training in the Assess and Plan phase of the Goodwill Opportunity Accelerator® supports Goodwill career coaches and navigators as they recruit job seekers, conduct intake and assessments, create career and financial plans, and collect and report intake and enrollment data.   </p></div>
     </div>
     <div class="cards">
       <div class="card" data-ess="na" data-hf="required">
         <div class="card-top"><div class="card-num">Phase 1 · 7</div></div>
         <h3>Outreach & Recruitment</h3>
-        <p class="desc">Proactively reach the people who need OA services most — especially those facing the greatest employment barriers who may not know where to turn. At High Fidelity, ART platforms and referral partners create systematic pathways from community touchpoints directly into OA services.</p>
+        <p class="desc">Promote mission services using diverse outreach methods and referral technologies.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Not required</span>
-          <span class="tier-pill tp-hf">High Fidelity: ART + referral partners</span>
+          <span class="tier-pill tp-ess">Gold: Not required</span>
+          <span class="tier-pill tp-hf">Platinum: ART + referral partners</span>
         </div>
         <div class="card-footer">
          
-          <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — ART Tools on Exchange</a>
+<a class="btn btn-dev">🔧 In development- ART Tools on Exchange</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Phase 1 · 8</div></div>
         <h3>Registration & Intake</h3>
-        <p class="desc">The critical first interaction that sets the tone for the entire participant journey. Collect demographic, work history, and eligibility information in a way that builds trust. Intake data directly informs the ICFP and every service decision that follows.</p>
+        <p class="desc">Conduct intake services to meet with potential clients/job seekers, learn more about who they are, and collect demographic, work and educational history, and other personal information that determines eligibility.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Short KPI list</span>
-          <span class="tier-pill tp-hf">High Fidelity: Long KPI list</span>
+          <span class="tier-pill tp-ess">Gold: Short KPI list</span>
+          <span class="tier-pill tp-hf">Platinum: Long KPI list</span>
         </div>
         <div class="card-footer">
          
-          <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — Updated Pre-Enrollment Form</a>
+<a class="btn btn-dev">🔧 In development- Updated Pre-Enrollment Form</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Phase 1 · 9a</div></div>
         <h3>Needs Assessment</h3>
-        <p class="desc">Holistic evaluation of barriers across financial capability, healthcare, food security, housing, transportation, legal issues, and family care. Required at both levels for 100% of participants — this is the foundation for coordinating wraparound services.</p>
+        <p class="desc">Holistic evaluation of barriers across financial capability, healthcare, food security, housing, transportation, legal issues, and family care. </p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: 100% of participants</span>
-          <span class="tier-pill tp-hf">High Fidelity: 100% of participants</span>
-          <span class="tier-pill tp-opt">Tool choice flexible</span>
+          <span class="tier-pill tp-ess">Gold: Valid Assessments Required</span>
+          <span class="tier-pill tp-hf">Platinum: Valid Assessments Required</span>
+        
         </div>
         <div class="card-footer">
         
-          <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — Recommended Assessment Tool</a>
+          <a class="btn btn-dev">🔧 In development- Recommended Assessment Tool</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
@@ -475,12 +490,12 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
         <h3>Basic Education Assessment</h3>
         <p class="desc">Measure reading, writing, math, and language proficiency using validated tools (TABE, CASAS, TOEFL, or similar). Required for participants without a diploma who are enrolling in occupational training — prevents placement in programs where literacy requirements exceed current skill levels.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: For non-diploma enrollees</span>
-          <span class="tier-pill tp-hf">High Fidelity: For non-diploma enrollees</span>
+          <span class="tier-pill tp-ess">Gold: For non-diploma enrollees</span>
+          <span class="tier-pill tp-hf">Platinum: For non-diploma enrollees</span>
         </div>
         <div class="card-footer">
          
-          <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — Recommended Tool</a>
+<a class="btn btn-dev">🔧 In development- Recommended Assessment Tool</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
@@ -488,22 +503,22 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
         <h3>Career Readiness & Interest Assessment</h3>
         <p class="desc">Evaluate work-related interests, soft skills, and career readiness using validated tools like JOFI or the O*NET Interest Profiler. Helps Career Navigators match participants to career pathways that align with both their interests and the local labor market.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Valid assessment required</span>
-          <span class="tier-pill tp-hf">High Fidelity: Valid assessment required</span>
-          <span class="tier-pill tp-opt">JOFI or O*NET recommended</span>
+          <span class="tier-pill tp-ess">Gold: Valid assessment required</span>
+          <span class="tier-pill tp-hf">Platinum: Valid assessment required</span>
+        
         </div>
         <div class="card-footer">
         
-          <a href="#" class="btn btn-live" target="_blank">O*NET Interest Profiler →</a>
+          <a href="https://onetinterestprofiler.org/" class="btn btn-live" target="_blank">O*NET Interest Profiler →</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Phase 1 · 9d</div></div>
         <h3>Digital Skills Assessment</h3>
-        <p class="desc">Measure digital literacy baseline using Northstar (required at High Fidelity) or another valid tool. Results guide decisions about which level of digital skills training to provide — from basic computer use through industry-specific certifications.</p>
+        <p class="desc">Measure digital literacy baseline using Northstar (required at Platinum) or another valid tool. Results guide decisions about which level of digital skills training to provide — from basic computer use through industry-specific certifications.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Any valid assessment</span>
-          <span class="tier-pill tp-hf">High Fidelity: Northstar required</span>
+          <span class="tier-pill tp-ess">Gold: Any valid assessment</span>
+          <span class="tier-pill tp-hf">Platinum: Northstar required</span>
         </div>
         <div class="card-footer">
         
@@ -515,13 +530,13 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
         <h3>Orientation</h3>
         <p class="desc">The official start of the participant's OA journey. Every participant must complete orientation before enrollment at both levels. Participants learn what services are available, what's expected of them, and how to navigate their pathway. Informed commitment — not passive sign-up.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: 100% of participants</span>
-          <span class="tier-pill tp-hf">High Fidelity: 100% of participants</span>
-          <span class="tier-pill tp-opt">Group or individual, virtual or in-person</span>
+          <span class="tier-pill tp-ess">Gold: Orientation is built into the onboarding process</span>
+          <span class="tier-pill tp-hf">Platinum: Orientation is built into the onboarding process</span>
+         
         </div>
         <div class="card-footer">
          
-          <a class="btn btn-dev">🔧 Resource in development</a>
+<a class="btn btn-dev">🔧 In development- Orientation Resource</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
@@ -529,13 +544,13 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
         <h3>Individual Career & Financial Plan (ICFP)</h3>
         <p class="desc">The personalized roadmap where everything comes together. Every participant completes an ICFP with SMART goals covering their career pathway, financial stability, and self-sufficiency. This living document guides every service decision and is updated as participants progress.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: 100% of participants</span>
-          <span class="tier-pill tp-hf">High Fidelity: 100% of participants</span>
-          <span class="tier-pill tp-opt">GII template or equivalent</span>
+          <span class="tier-pill tp-ess">Gold: Participants develop an Individual Career and Financial Plan in partnership with a career navigator</span>
+          <span class="tier-pill tp-hf">Platinum: Participants develop an Individual Career and Financial Plan in partnership with a career navigator</span>
+       
         </div>
         <div class="card-footer">
 
-          <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — Updated ICFP Form</a>
+          <a class="btn btn-dev">🔧 In development- Updated IFCP Form</a>
         </div>
       </div>
     </div>
@@ -545,68 +560,68 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
   <div class="panel" id="panel-p2">
     <div class="phase-banner pb-2">
       <div class="pb-icon">🛠</div>
-      <div><div class="pb-head">Phase 2 — Equip & Connect</div><p class="pb-desc">Implement skills training, provide holistic wraparound support, and prepare participants for employment. This phase is about building the competencies — and removing the barriers — that make sustainable employment possible.</p></div>
+      <div><div class="pb-head">Phase 2 — Equip & Connect</div><p class="pb-desc">The tools, resources and training in the Equip and Connect phase of the Goodwill Opportunity Accelerator® supports Goodwill career coaches and navigators with implementing skills training programs, providing holistic support services for program participants, and preparing job seekers for employment in the community. </p></div>
     </div>
     <div class="cards">
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Phase 2 · 12</div></div>
         <h3>Wraparound Supports</h3>
-        <p class="desc">Address the non-employment barriers that derail progress: housing, transportation, childcare, healthcare, food security, legal issues, and more. Participants cannot focus on career development when they're in crisis. At High Fidelity, ART platforms enable electronic referrals and closed-loop tracking with partner organizations.</p>
+        <p class="desc">Provide support services to remove barriers to success including remedial education, financial capability, health care, mental health, food security, housing stability, transportation, legal issues, family care (adult and child), and clothing needed for employment.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Resources aligned with individual needs</span>
-          <span class="tier-pill tp-hf">High Fidelity: ART-coordinated referrals</span>
+          <span class="tier-pill tp-ess">Gold: Resources aligned with individual needs</span>
+          <span class="tier-pill tp-hf">Platinum: ART-coordinated referrals</span>
         </div>
         <div class="card-footer">
         
-          <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — ART Tools on Exchange</a>
+<a class="btn btn-dev">🔧 In development- ART Tools on Exchange</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Phase 2 · 13</div></div>
         <h3>Financial Education</h3>
-        <p class="desc">Earning income doesn't automatically create economic stability. Financial education covers budgeting, banking, credit building, debt management, savings, tax prep, benefits enrollment, and navigating benefit cliffs. Required at both levels for 100% of participants — offered and integrated with career planning in the ICFP.</p>
+        <p class="desc">Guidance on personal finance management and planning.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Must offer to 100%</span>
-          <span class="tier-pill tp-hf">High Fidelity: Must offer to 100%</span>
+          <span class="tier-pill tp-ess">Gold: Must offer to 100%</span>
+          <span class="tier-pill tp-hf">Platinum: Must offer to 100%</span>
         </div>
         <div class="card-footer">
 
-          <a class="btn btn-dev">🔧 Resource in development</a>
+          <a class="btn btn-dev">🔧 In development- Financial Education Resource</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Phase 2 · 14</div></div>
         <h3>Foundational Skills Training</h3>
-        <p class="desc">Build the workplace competencies employers identify as critical: communication, teamwork, time management, professionalism, and problem-solving. Technical skills get people hired — foundational skills determine whether they keep jobs and advance. At High Fidelity, at least one Skills to Succeed Academy course is required.</p>
+        <p class="desc">Training on personal and interpersonal competencies for employment.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Must offer foundational training</span>
-          <span class="tier-pill tp-hf">High Fidelity: Skills to Succeed Academy required</span>
+          <span class="tier-pill tp-ess">Gold: Must offer foundational training</span>
+          <span class="tier-pill tp-hf">Platinum: Skills to Succeed Academy required</span>
         </div>
         <div class="card-footer">
           
-          <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — Skills to Succeed Academy</a>
+          <a href="https://s2sacademy.org/" class="btn btn-live" target="_blank">Skills to Succeed Academy →</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Phase 2 · 15</div></div>
         <h3>Digital Skills Training</h3>
-        <p class="desc">Digital literacy is foundational to virtually every career pathway today. Training follows the Goodwill Digital Career Accelerator (GDCA) framework across five progressive levels — from basic computer use (Level 2) through mid-career credentials (Level 5). Northstar Online Learning is recommended for High Fidelity.</p>
+        <p class="desc">Teach use of computers, software, and online tools for employment.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: GDCA framework, needs-based</span>
-          <span class="tier-pill tp-hf">High Fidelity: GDCA + Northstar Online Learning</span>
+          <span class="tier-pill tp-ess">Gold: GDCA framework, needs-based</span>
+          <span class="tier-pill tp-hf">Platinum: GDCA + Northstar Online Learning</span>
         </div>
         <div class="card-footer">
        
-          <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — Northstar Online Learning (NSOL)</a>
+         <a class="btn btn-dev">🔧 In development- Digital Skills Training</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Phase 2 · 16</div></div>
         <h3>Occupation-Specific Skills Training</h3>
-        <p class="desc">Technical training leading to industry-recognized credentials in fields with real local demand. At High Fidelity, training must be co-created with employer input and target occupations paying living wages (per the MIT Living Wage Calculator). Partners include GCTA, Cisco, IBM, Cengage, Coursera, and more.</p>
+        <p class="desc">Training and certifications leading to industry-recognized credentials.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Aligned with local labor market</span>
-          <span class="tier-pill tp-hf">High Fidelity: Living wage focus + employer co-creation</span>
+          <span class="tier-pill tp-ess">Gold: Aligned with local labor market</span>
+          <span class="tier-pill tp-hf">Platinum: Living wage focus + employer co-creation</span>
         </div>
         <div class="card-footer">
         
@@ -616,28 +631,28 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
       <div class="card" data-ess="na" data-hf="required">
         <div class="card-top"><div class="card-num">Phase 2 · 17</div></div>
         <h3>Career Exploration Opportunities</h3>
-        <p class="desc">Hands-on experiences — job shadowing, OJT, internships, apprenticeships, VR simulations, and more — that help participants make informed career decisions before committing to training. Participants who explore before training have higher completion rates and better retention because they know what they're signing up for.</p>
+        <p class="desc">Hands-on experiences such as job shadowing, OJT, learn-and-earn, internships, pre-apprenticeships, apprenticeships, job site tours, informational employment observations, and simulated environments using VR headsets.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Not required</span>
-          <span class="tier-pill tp-hf">High Fidelity: Must offer career exploration</span>
-          <span class="tier-pill tp-opt">WIOA, TANF, apprenticeships, subsidized employment</span>
+          <span class="tier-pill tp-ess">Gold: Not required</span>
+          <span class="tier-pill tp-hf">Platinum: Must offer career exploration</span>
+        
         </div>
         <div class="card-footer">
         
-          <a class="btn btn-dev">🔧 Resource in development</a>
+          <a class="btn btn-dev">🔧 In development- Career Exploration Opportunities</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Phase 2 · 18</div></div>
         <h3>Job Search & Prep Assistance</h3>
-        <p class="desc">All prior services converge here: résumé development, cover letters, interview preparation, online application navigation, professional presentation, disclosure coaching, and LinkedIn profiles. Required for 100% of participants at both levels. Career Navigators provide ongoing support through what can be a lengthy, emotionally challenging process.</p>
+        <p class="desc">Support with resumes, interviews, and job applications.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Résumé + interview prep required</span>
-          <span class="tier-pill tp-hf">High Fidelity: Résumé + interview prep required</span>
+          <span class="tier-pill tp-ess">Gold: Résumé + interview prep required</span>
+          <span class="tier-pill tp-hf">Platinum: Résumé + interview prep required</span>
         </div>
         <div class="card-footer">
           
-          <a class="btn btn-dev">🔧 Resource in development</a>
+    <a class="btn btn-dev">🔧 In development- Job Search and Prep Assistance</a>
         </div>
       </div>
     </div>
@@ -647,48 +662,48 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
   <div class="panel" id="panel-p3">
     <div class="phase-banner pb-3">
       <div class="pb-icon">🚀</div>
-      <div><div class="pb-head">Phase 3 — Launch & Evaluate</div><p class="pb-desc">Secure employment, support retention, and maintain long-term connection with alumni. Getting the job is the beginning, not the end — this phase is where sustainable economic mobility is built.</p></div>
+      <div><div class="pb-head">Phase 3 — Launch & Evaluate</div><p class="pb-desc">The tools, resources and training in the Launch and Evaluate phase of the Goodwill Opportunity Accelerator® supports Goodwill career coaches and navigators with enhancing job placement efforts, supporting job retention and career progression, and optimizing post-program alumni engagement.  </p></div>
     </div>
     <div class="cards">
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Phase 3 · 19</div></div>
         <h3>Job Placement Assistance</h3>
-        <p class="desc">Engage employer partners to identify openings and place participants in jobs — not just any jobs, but positions aligned with their training, career goals, and wage targets. At High Fidelity, placements must meet living wage thresholds per the MIT Living Wage Calculator for the participant's geographic area.</p>
+        <p class="desc">Engage employers to identify job openings and create employment opportunities.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Must offer placement assistance</span>
-          <span class="tier-pill tp-hf">High Fidelity: Living wage placements required</span>
+          <span class="tier-pill tp-ess">Gold: Must offer placement assistance</span>
+          <span class="tier-pill tp-hf">Platinum: Living wage placements required</span>
         </div>
         <div class="card-footer">
           
-          <a class="btn btn-dev">🔧 Resource in development</a>
+          <a class="btn btn-dev">🔧 In development- Job Placement Assistance</a>
         </div>
       </div>
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Phase 3 · 20</div></div>
         <h3>Retention Services & Follow-Up</h3>
-        <p class="desc">The first 90–180 days of employment are the highest-risk period. Structured follow-up at set intervals enables Career Navigators to address emerging problems before they cause job loss. Services include crisis intervention, workplace coaching, benefits navigation, and financial stability support. High Fidelity extends follow-up through one full year.</p>
+        <p class="desc">Ongoing support after job placement or training completion to help individuals retain employment and advance in their careers, including access to wraparound supports and skill-building aligned with their goals.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Follow-up at 30/60/90/180 days</span>
-          <span class="tier-pill tp-hf">High Fidelity: Follow-up through 365 days</span>
-          <span class="tier-pill tp-opt">The Work Number for verification</span>
+          <span class="tier-pill tp-ess">Gold: Follow-up at 30/60/90/180 days</span>
+          <span class="tier-pill tp-hf">Platinum: Follow-up through 365 days</span>
+       
         </div>
         <div class="card-footer">
          
-          <a class="btn btn-dev">🔧 Resource in development</a>
+          <a class="btn btn-dev">🔧 In development- Retention and Follow-Up</a>
         </div>
       </div>
       <div class="card" data-ess="na" data-hf="required">
         <div class="card-top"><div class="card-num">Phase 3 · 21</div></div>
         <h3>Alumni Engagement</h3>
-        <p class="desc">Transform program graduates into community partners. Alumni serve as mentors for current participants, employer ambassadors, storytellers for funders, and advocates in their communities. Required at High Fidelity (at least one engagement method). Alumni who give back expand your organizational capacity — and demonstrate OA's long-term transformative impact.</p>
+        <p class="desc">Long-term engagement of individuals after program completion or job placement — extending beyond one year, through networking, mentorship, and/or leveraging alumni as teachers or teaching assistants.</p>
         <div class="card-tiers">
-          <span class="tier-pill tp-ess">Essentials: Not required</span>
-          <span class="tier-pill tp-hf">High Fidelity: At least 1 engagement method</span>
-          <span class="tier-pill tp-opt">Format and frequency flexible</span>
+          <span class="tier-pill tp-ess">Gold: Not required</span>
+          <span class="tier-pill tp-hf">Platinum: At least 1 engagement method</span>
+     
         </div>
         <div class="card-footer">
           
-          <a class="btn btn-dev">🔧 Resource in development</a>
+         <a class="btn btn-dev">🔧 In development- Alumni Engagement</a>
         </div>
       </div>
     </div>
@@ -704,7 +719,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Impact</div></div>
         <h3>OA Fidelity Index</h3>
-        <p class="desc">Measure how closely your OA implementation aligns with the model framework. Use this tool to identify gaps, celebrate progress, and plan next steps on your adoption journey — whether you're moving toward Essentials or High Fidelity.</p>
+        <p class="desc">Measure how closely your OA implementation aligns with the model framework. Use this tool to identify gaps, celebrate progress, and plan next steps on your adoption journey — whether you're moving toward Gold or Platinum.</p>
         <div class="card-footer">
           <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — Updated Fidelity Index</a>
         </div>
@@ -712,7 +727,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Impact</div></div>
         <h3>OA Adoption Criteria Document</h3>
-        <p class="desc">Your complete roadmap for adoption. Contains all 21 criteria with Essentials and High Fidelity requirements, and guidance on moving from implementation to formal adoption. Return to this document repeatedly as you progress.</p>
+        <p class="desc">Your complete roadmap for adoption. Contains all 21 criteria with Gold and Platinum requirements, and guidance on moving from implementation to formal adoption. Return to this document repeatedly as you progress.</p>
         <div class="card-footer">
           <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — Adoption Criteria PDF</a>
         </div>
@@ -720,7 +735,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.5);text-align:center;paddi
       <div class="card" data-ess="required" data-hf="required">
         <div class="card-top"><div class="card-num">Impact</div></div>
         <h3>CaseWorthy Case Management</h3>
-        <p class="desc">Required case management platform at OA High Fidelity. Captures the full list of OA KPIs, tracks participants across all service phases, and supports monthly data submission to GII. Contact GII for implementation support and configuration guidance.</p>
+        <p class="desc">Required case management platform at OA Platinum. Captures the full list of OA KPIs, tracks participants across all service phases, and supports monthly data submission to GII. Contact GII for implementation support and configuration guidance.</p>
         <div class="card-footer">
           <a href="#" class="btn btn-tbd"><span class="status-dot"></span>Link TBD — CaseWorthy on Exchange</a>
         </div>
@@ -759,7 +774,7 @@ function setTier(tier) {
   currentTier = tier;
   document.querySelectorAll('.tier-btn').forEach(b => b.classList.remove('on'));
   event.target.classList.add('on');
-  const hints = {ess:'Showing core adoption requirements', hf:'Showing full High Fidelity requirements', all:'Showing all criteria'};
+  const hints = {ess:'Showing core adoption requirements', hf:'Showing full Platinum requirements', all:'Showing all criteria'};
   document.getElementById('tier-hint').textContent = hints[tier];
 
   document.querySelectorAll('.card').forEach(card => {
